@@ -31,7 +31,7 @@ def natashaWord(sentence):
     print(' | '.join(words))
 
 def readText():
-    with open("input.txt") as inp:
+    with open("input.txt", 'r', encoding='utf-8') as inp:
         lines = inp.readlines()
     return ''.join(lines)
 

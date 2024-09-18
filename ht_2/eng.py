@@ -1,20 +1,20 @@
 import nltk
 
 def nltkSent(sentences):
-    print("nltk:")
     tokens = nltk.sent_tokenize(sentences)
     i = 1
+    print("Предложения:")
     for item in tokens:
         print(f"{i}) {item}")
         i += 1
 
 def nltkWord(sentence):
-    print("nltk:")
     tokens = nltk.word_tokenize(sentence)
+    print("Результат результат разбиения:")
     print(' | '.join(tokens))
 
 def readText():
-    with open("input.txt") as inp:
+    with open("input.txt", 'r') as inp:
         lines = inp.readlines()
     return ''.join(lines)
 
