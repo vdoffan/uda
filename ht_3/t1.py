@@ -1,12 +1,10 @@
-import re
 from collections import Counter
-import nltk
 from nltk.tokenize import RegexpTokenizer
 import matplotlib.pyplot as plt
 import random
 
 def getText():
-    with open("te00.txt", 'r', encoding='utf-8') as file:
+    with open("t0.txt", 'r', encoding='utf-8') as file:
         text = file.readlines()
 
     # Замена 'ё' на 'е' и приведение к нижнему регистру
